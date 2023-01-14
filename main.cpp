@@ -59,11 +59,24 @@ int main() {
 		fuel_in_tank = 300 - (path_AB * fuel_l500);
 		if (fuel_in_tank < 0)
 		{
-			cout << "You are running out of fuel." << " There was not enough fuel" << fuel_in_tank;
+			fuel_in_tank = (path_AB * fuel_l500) - 300;
+			cout << "You will not reach the B from A. You will running out of fuel." << " There was not enough fuel: " << fuel_in_tank;
 		}
 		else if (fuel_in_tank >= 0 || fuel_in_tank > 0)
 		{
-			cout << fuel_in_tank << " (l) will left after travel from A to B";
+			cout << fuel_in_tank << " (l) will left in tank after travel from A to B";
+		}
+
+
+		if (fuel_full < (path_BC * fuel_l500))
+		{
+			fuel_in_tank = (path_BC * fuel_l500) - 300;
+			cout << "\nYou will not reach the B from C. You will running out of fuel." << " There was not enough fuel: " << fuel_in_tank << " (l)";
+		}
+		else if (fuel_in_tank >= (path_BC * fuel_l500))
+		{
+			fuel_in_tank = 300 - (path_BC * fuel_l500);
+				cout << "\n" << fuel_in_tank << " (l) will left in tan after travel from B to C";
 		}
 	}break;
 
@@ -72,11 +85,24 @@ int main() {
 		fuel_in_tank = 300 - (path_AB * fuel_l1000);
 		if (fuel_in_tank < 0)
 		{
-			cout << "You are running out of fuel." << " There was not enough fuel" << fuel_in_tank;
+			fuel_in_tank = (path_AB * fuel_l1000) - 300;
+			cout << "You will not reach the B from A. You will running out of fuel." << " There was not enough fuel: " << fuel_in_tank;
 		}
 		else if (fuel_in_tank >= 0 || fuel_in_tank > 0)
 		{
-			cout << fuel_in_tank << " (l) will left after travel from A to B";
+			cout << fuel_in_tank << " (l) will left in tank after travel from A to B";
+		}
+
+
+		if (fuel_full < (path_BC * fuel_l1000))
+		{
+			fuel_in_tank = (path_BC * fuel_l1000) - 300;
+			cout << "\nYou will not reach the B from C. You will running out of fuel." << " There was not enough fuel: " << fuel_in_tank << " (l)";
+		}
+		else if (fuel_in_tank >= (path_BC * fuel_l1000))
+		{
+			fuel_in_tank = 300 - (path_BC * fuel_l1000);
+			cout << "\n" << fuel_in_tank << " (l) will left in tan after travel from B to C";
 		}
 	}break;
 
@@ -85,11 +111,24 @@ int main() {
 		fuel_in_tank = 300 - (path_AB * fuel_l1500);
 		if (fuel_in_tank < 0)
 		{
-			cout << "You are running out of fuel." << " There was not enough fuel" << fuel_in_tank;
+			fuel_in_tank = (path_AB * fuel_l1500) - 300;
+			cout << "You will not reach the B from A. You will running out of fuel." << " There was not enough fuel: " << fuel_in_tank;
 		}
 		else if (fuel_in_tank >= 0 || fuel_in_tank > 0)
 		{
-			cout << fuel_in_tank << " (l) will left after travel from A to B";
+			cout << fuel_in_tank << " (l) will left in tank after travel from A to B";
+		}
+
+
+		if (fuel_full < (path_BC * fuel_l1500))
+		{
+			fuel_in_tank = (path_BC * fuel_l1500) - 300;
+			cout << "\nYou will not reach the B from C. You will running out of fuel." << " There was not enough fuel: " << fuel_in_tank << " (l)";
+		}
+		else if (fuel_in_tank >= (path_BC * fuel_l1500))
+		{
+			fuel_in_tank = 300 - (path_BC * fuel_l1500);
+			cout << "\n" << fuel_in_tank << " (l) will left in tan after travel from B to C";
 		}
 	}break;
 
@@ -98,11 +137,24 @@ int main() {
 		fuel_in_tank = 300 - (path_AB * fuel_l2000);
 		if (fuel_in_tank < 0)
 		{
-			cout << "You are running out of fuel." << " There was not enough fuel" << fuel_in_tank;
+			fuel_in_tank = (path_AB * fuel_l2000) - 300;
+			cout << "You will not reach the B from A. You will running out of fuel." << " There was not enough fuel: " << fuel_in_tank;
 		}
 		else if (fuel_in_tank >= 0 || fuel_in_tank > 0)
 		{
-			cout << fuel_in_tank << " (l) will left after travel from A to B";
+			cout << fuel_in_tank << " (l) will left in tank after travel from A to B";
+		}
+
+
+		if (fuel_full < (path_BC * fuel_l2000))
+		{
+			fuel_in_tank = (path_BC * fuel_l2000) - 300;
+			cout << "\nYou will not reach the B from C. You will running out of fuel." << " There was not enough fuel: " << fuel_in_tank << " (l)";
+		}
+		else if (fuel_in_tank >= (path_BC * fuel_l2000))
+		{
+			fuel_in_tank = 300 - (path_BC * fuel_l2000);
+			cout << "\n" << fuel_in_tank << " (l) will left in tan after travel from B to C";
 		}
 	}break;
 	default:
