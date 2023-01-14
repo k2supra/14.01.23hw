@@ -9,8 +9,10 @@
     <ClCompile Include="main.cpp">
       <Filter>main</Filter>
     </ClCompile>
-    <ClCompile Include="fuel.cpp">
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="fuel.h">
       <Filter>main</Filter>
-    </ClCompile>
+    </ClInclude>
   </ItemGroup>
 </Project>
